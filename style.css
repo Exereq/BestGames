@@ -1,0 +1,97 @@
+body{
+    background-image: url('tlo_strony.jpg');
+}
+
+#container{
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#content{
+    max-width: 1800px;
+    max-height: 400px;
+    justify-content: center; 
+
+    /*font-honk*/
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 130,
+    "SHLN" 50;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tile{
+    font-size:50px;
+    color:white;
+    background-color: aqua;
+    border-radius:20px;
+    padding: 20px;
+    width:340px;
+    height:240px;
+    display: grid; 
+    place-items: center;
+    letter-spacing: 5px;
+    gap: 10px;
+    box-shadow: 10px 5px 5px black;
+
+    /*gradient*/
+    background: #c39322;
+    background: linear-gradient(0deg, rgba(195, 147, 34, 1) 0%, rgba(253, 45, 215, 1) 100%);
+}
+
+.tile:hover{
+    font-size:70px;
+    transition-duration:1.5s;
+    width: 360px;
+    height: 260px;
+    box-shadow: 10px 5px 5px white;
+}
+
+#title{
+    font-size:100px;
+    margin: auto;
+    text-align:center;
+    letter-spacing: 15px;
+    order:1;
+}
+
+#footer{
+    font-size:40px;
+    margin: auto;
+    text-align:center;
+    clear:both;
+}
+
+td, th{
+    border:1px solid black;
+    border-collapse: collapse;
+    width: 10%;
+}
+
+.ad{
+    border-collapse: collapse;
+    max-width: 200px;
+    height: 600px;
+    order:2;
+    border-radius: 7px;
+}
+
+#row1{
+    order:3;
+}
+
+#row2{
+    order:4
+}
+
+nav{
+    position: sticky;
+    background-color:aqua;
+}
