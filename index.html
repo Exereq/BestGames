@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <link rel="icon" type="image/x-icon" href="ikonka.jpg">
+
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet"/>
+
+    <!-- polsat script -->
+    <script>
+        function playSound() {
+        var audio = document.getElementById("polsat");
+            audio.play();
+        }
+    </script>
+
 </head>
 <body>
-    <nav id="navigation">
-        <a href="index.html">Strona Główna</a>
-        <a href="#row1">Gry</a>
-        <a href="#footer">Stopka</a>
-    </nav>
-
-
     <div id="container">
+        <div id="title">
+            Best games 2025
+        </div>
+        <nav id="navigation">
+            <a href="index.html">Strona Główna  </a>
+            <a href="#row1">Gry  </a>
+            <a href="#footer">Stopka</a>
+        </nav>
         <div id="content">
-            <div id="title">
-                Best games 2025
-            </div>
-            <table class="ad">
+            
+            <!-- <table class="ad">
                 <tr>
                     <th>Shopee</th>
                     <th>Aliexpress</th>
@@ -33,35 +42,70 @@
                     <th>Temu</th>
                     <th></th>
                 </tr>
-            </table>
+            </table> -->
             <div id="row1">
-                <div class="tile">
-                    <a href="minecraft.html">Minecraft</a>
-                </div>
-                <div class="tile" style="font-size: 40px;">
-                    <a href="gd.html">Geometry dash</a>
-                </div>
-                <div class="tile">
-                    <a href="recore.html">Recore</a>
-                </div>
+                    <a href="minecraft.html">
+                        <div class="tile">
+                            Minecraft
+                        </div>
+                    </a>
+                    <a href="gd.html">
+                        <div class="tile" style="font-size:40px;">
+                            Geometry Dash
+                        </div>
+                    </a>
+                    <a href="recore.html">
+                        <div class="tile">
+                            recore
+                        </div>
+                    </a>
+                    <a href="rust.html">
+                        <div class="tile">
+                            rust
+                        </div>
+                    </a>
+                    <a href="valorant.html">
+                        <div class="tile">
+                            Valorant
+                        </div>
+                    </a>
+                    <a href="rayman.html">
+                        <div class="tile">
+                            Rayman
+                        </div>
+                    </a>
             </div>
-            <div id="row2">
-                <div class="tile">
-                    <a href="rust.html">Rust</a>
-                </div>
-                <div class="tile">
-                    <a href="valorant.html">Valorant</a>
-                </div>
-                <div class="tile">
-                    <a href="rayman.html">Rayman</a>
-                </div>
+            <div id="contact">
+                <form action="https://formsubmit.co/Miejsce na twój adres e-mail" method="POST" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>
+                            Napisz do mnie
+                        </legend>
+                        <label for="imie">Imię</label>
+                        <input type="text" maxlength="15" placeholder="jak masz na imię?" id="name" name="name"></input>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="Tutaj podaj email" id="email" required>
+
+                        <textarea rows="1" placeholder="Twoje pytanie.." id="email" required></textarea>
+                        <input id="btnSubmit" type="submit" value="prześlij" onclick="playSound()">
+
+                        </input>
+                        <div id="polsat">
+                            <audio id="polsat" controls="controls" autoplay="autoplay">
+                                <source src="polsat.mp3" type="audio/mp3">
+                                    Twoja przeglądarka nie obsługuje elementu audio.
+                                </source>
+                            </audio>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
             <div id="footer">
                 Wszelkie prawa zastrzeżone
             </div>
         </div>
-        <table class="ad" style="order:5;">
-                <tr>
+        <!-- <table class="ad" >
                     <th>Shopee</th>
                     <th>Aliexpress</th>
                 </tr>
@@ -69,8 +113,8 @@
                     <th>Temu</th>
                     <th></th>
                 </tr>
-            </table>
-    </div>
+            </table> -->
+    <!-- </div>
     <ol>
         <li>
         </li>
@@ -81,10 +125,7 @@
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-    <audio controls="controls" autoplay="autoplay">
-        <source src="polsat.mp3" type="audio/mp3" />
-        Twoja przeglądarka nie obsługuje elementu audio.
-    </audio>
+    </ul> -->
+    
 </body>
 </html>
